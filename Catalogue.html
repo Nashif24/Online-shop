@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Catalogue</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        //this creates the hide and show function for one of the items in the catalogue
+    $(document).ready(function() {
+        $("#hide1").click(function() {
+            $("#img1").hide();
+        });
+        $("#show1").click(function() {
+            $("#img1").show();
+        });
+    });
+    //this creates the chain effect for all the paragraph elements on the page
+    $(document).ready(function() {
+        $("#chain").click(function() {
+            $("p").css("color", "red").slideUp(2000).slideDown(2000);
+        });
+    });
+    </script>
+    <!--this is the link for the boostrap-->
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <!--this is the link for the stylesheet-->
+</head>
+
+<body id="back4">
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="cart.html">Cart</a>
+        <!--this links the catalogue page to the index-->
+    </div>
+    <div class="text-center">
+        <!--this centered the text in -->
+        <h1>Every Item Shop</h1>
+        <!--this gives the heading of the store-->
+        <p>Items Available are</p>
+        <button id="chain">Click here to see chained effect</button>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <!--this creates a grid for the items being sold in the shop which will work on small devices like cellphones-->
+                <h3>Catalogue 1</h3>
+                <!--this gives a heading for the grid-->
+                <img id="img1" src="images/image1.jpg" class="img-fluid img-thumbnail rounded-circle">
+                <button id="hide1">Click here to hide image</button>
+                <button id="show1">Click here to show the image</button>
+                <!--this inserts a image and makes it resposive and an thumbnail-->
+                <p>Playstation 4 slim console: Price R6400
+                    <br>
+                    Stylized plastic with an all-matte exterior
+                    500GB hard drive
+                    1.6GHz octo-core AMD custom Jaguar CPU
+                    8GB of GDDR5 RAM
+                    Two USB 3.1 ports located at the front of the console.
+                    <!--this is a paragraph that gives a brief description of the item being sold-->
+                </p>
+                <!--this creates a button to add the items to the cart and the onclick function is for the alert as well-->
+                <button onclick="addtocart1()" class="btn-add">Add to cart</button>
+                <img src="images/image2.jpg" class="img-fluid img-thumbnail rounded-circle">
+                <p>Playstation 4 dualshock controller: Price R1000
+                    <br>
+                    Features capactive touch input
+                    A brightly-coloured light bar
+                    Plus a speaker on the controller
+                </p>
+                <!--this is created for all the items in the cart-->
+                <button onclick="addtocart2()" class="btn-add">Add to cart</button>
+            </div>
+            <!--this closes the grid so that a new one underneath it can be made-->
+            <div class="col-sm-4">
+                <h3>Catalogue 2</h3>
+                <img src="images/image3.jpg" class="img-fluid img-thumbnail rounded">
+                <!--this calls the image from the folder that it is in-->
+                <p>Assassin's Creed Odyssey: Price R1000
+                    <!--this is an opening of a paragraph-->
+                    <br>
+                    <!--this creates a line break-->
+                    Takes place in ancient Grecce
+                    RPG video game, runs on all platforms
+                    Xbox One, PC and PS4
+                </p>
+                <button onclick="addtocart3()" class="btn-add">Add to cart</button>
+                <!--this closes the paragraph-->
+                <img src="images/image4.jpg" class="img-fluid img-thumbnail rounded">
+                <p>Gaming Laptop: Price R8500
+                    <br>
+                    Designed to play video games
+                    Performance-oriented components
+                    Video Cards and high core-count CPU
+                </p>
+                <button onclick="addtocart4()" class="btn-add">Add to cart</button>
+            </div>
+            <div class="col-sm-4">
+                <h3>Catalogue 3</h3>
+                <img src="images/image6.jpg" class="img-fluid img-thumbnail rounded">
+                <p>Meade S102 Refractor Telescope Bundle:
+                    <br>
+                    Large 102mm Refracting Telescope
+                    Great for Land and Astronomy Viewing
+                    Two Eyepieces for high and low power views
+                    Sturdy full size tripod, slow motion panning control
+                    Smartphone photo adapter</p>
+                <button onclick="addtocart5()" class="btn-add">Add to cart</button>
+            </div>
+        </div>
+    </div>
+    <!--this creates a link back to the index or home page-->
+    <a href="index.html">Back to home</a>
+    <!--this links the javascript to the html-->
+    <script type="text/javascript" src="catalogue.js"></script>
+</body>
+
+</html>

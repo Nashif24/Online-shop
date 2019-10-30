@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Purchase Items</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<!--this is the nav bar for the page for the user to navigate-->
+<body class="back2">
+    <h1>Confirm Purchase</h1>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="cart.html">Cart</a>
+    </div>
+    <section>
+        <!--this is a heading and a form for the user to choose where they want to collect form-->
+        <!--and there is a radio input tick box for the user to choose from-->
+        <h2 id="ch1">Click here to choose which store you want to collect from</h2>
+        <form id="pick1">
+            <input type="radio" name="location" id="ar1">
+            <label>2342 Shattuck Ave, Berkeley, CA 94704, USA</label><br>
+            <input type="radio" name="location" id="ar2">
+            <label>1835 E Hallandale Beach Boulevard, Hallandale Beach, FL 33009, USA</label><br>
+        </form>
+        <!--this creates a heading to choose if the user wants to choose for the items to be dropped by the shop-->
+        <!--another thing created here is a form and an radio input for the user to choose a type of delivery-->
+        <h2 id="ch2"> Click here to choose the type of delivery</h2>
+        <form id="pick2">
+            <input type="radio" name="vechile" id="drone">
+            <label>Drone</label><br>
+            <input type="radio" name="vechile" id="truck">
+            <label>Truck</label>
+        </form><br>
+        <form>
+            <!--this is an form for the user to enter the info need to see where the package will be delivered-->
+            <input type="text" placeholder="First Name"><br>
+            <input type="text" placeholder="Surname"><br>
+            <input type="text" placeholder="Email"><br>
+            <input type="text" placeholder="Home address"><br>
+            <input type="text" placeholder="Postal code"><br>
+            <input type="text" placeholder="State"><br>
+            <input type="text" placeholder="City">
+            <hr><!--this creates a line across the page-->
+            <!--this is the button onclick to purchase the items the user bought-->
+            <button onclick="purchase1()">Confirm your purchase</button>
+        </form>
+    </section>
+    <!--this is the link for the jquery functions-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--this is the link for the js-->
+    <script type="text/javascript" src="ConfirmP.js"></script>
+</body>
+
+</html>

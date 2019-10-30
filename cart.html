@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Shopping Cart Items</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body class="back1">
+    <div class="navbar">
+        <!--this create the nav bar for all the links-->
+        <a href="index.html">Home</a>
+        <a href="cart.html">Cart</a>
+        <a href="Catalogue.html">Catalogue</a>
+    </div>
+    <!--this is the heading of the items being stored in the cart-->
+    <h1>Items In Cart</h1>
+    <section>
+        <!--this stores the name and amount in a table-->
+        <table id="Stuff">
+            <tr>
+                <th>Name & Amount</th>
+            </tr>
+        </table>
+        <button>X</button>
+        <!--this is where the total of all the items will be stored-->
+        <div id="itemTotal">Total: </div>
+        <!--the buttons below are linked to a coupon page and an purchase page-->
+        <a href="coupon.html"><button>Click here to apply for a coupon</a></button>
+        <a href="Confirm Purchase.html"><button>Click here to purchase all items</button></a>
+    </section>
+    <!--this links the javascript for the cart-->
+    <script type="text/javascript" src="cart.js"></script>
+</body>
+
+</html>
